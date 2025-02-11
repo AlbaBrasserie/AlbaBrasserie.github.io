@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #505D52;              /* Matching background color bgv1. #92523b for bgv2 */
+    color: #F8F5EE;                         /* Light beige */
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.background-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;                /* Reduce the size of the background */
+    max-width: 450px;           /* Maximum limit for not grainy */
+}
+
+.background-container img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    top: -20%;
+}
+
+button {
+    font-size: 22px;
+    padding: 15px 20px;
+    background: #D3B88C;        /* Soft gold */
+    color: #2F3B2F;             /* Deep green */
+    border: 2px solid #F8F5EE;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #B89F74;
+}
+
+.pdf-link {
+    display: inline-block;
+    color: #F8F5EE;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
